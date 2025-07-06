@@ -1,0 +1,124 @@
+{
+  "app_info": {
+    "name": "أداة تعريب الهواتف الذكية",
+    "version": "1.0.0",
+    "author": "أبو محمود السوري",
+    "email": "support@abu-mahmoud-syrian.com",
+    "website": "www.abu-mahmoud-syrian.com"
+  },
+  "ui_settings": {
+    "window_width": 1200,
+    "window_height": 800,
+    "min_width": 800,
+    "min_height": 600,
+    "theme": "dark",
+    "font_family": "Arial",
+    "font_size": 10,
+    "language": "ar"
+  },
+  "colors": {
+    "primary": "#3498db",
+    "success": "#27ae60",
+    "warning": "#e67e22",
+    "danger": "#e74c3c",
+    "info": "#9b59b6",
+    "secondary": "#1abc9c",
+    "background": "#2c3e50",
+    "frame_bg": "#34495e",
+    "text_color": "#ecf0f1"
+  },
+  "general_settings": {
+    "auto_backup": true,
+    "enable_logging": true,
+    "check_updates": true,
+    "save_window_position": true,
+    "remember_last_device": true,
+    "auto_detect_processor": true,
+    "confirm_dangerous_operations": true
+  },
+  "arabization_settings": {
+    "default_arabic_fonts": true,
+    "default_rtl_support": true,
+    "default_arabic_keyboard": true,
+    "backup_before_arabization": true,
+    "verify_after_arabization": true
+  },
+  "frp_settings": {
+    "backup_before_unlock": true,
+    "verify_device_compatibility": true,
+    "use_safe_methods_only": true,
+    "timeout_seconds": 300
+  },
+  "mtk_settings": {
+    "auto_detect_chip": true,
+    "save_keys_automatically": true,
+    "format_keys_output": true,
+    "backup_original_keys": true,
+    "verify_extracted_keys": true
+  },
+  "security_settings": {
+    "encrypt_saved_keys": true,
+    "require_license_verification": true,
+    "log_all_operations": true,
+    "backup_logs": true,
+    "secure_delete_temp_files": true
+  },
+  "network_settings": {
+    "check_internet_connection": true,
+    "auto_download_updates": false,
+    "use_proxy": false,
+    "proxy_host": "",
+    "proxy_port": 8080,
+    "timeout_seconds": 30
+  },
+  "paths": {
+    "logs_directory": "logs",
+    "keys_directory": "keys",
+    "temp_directory": "temp",
+    "backups_directory": "backups",
+    "downloads_directory": "downloads"
+  },
+  "supported_processors": [
+    "Qualcomm Snapdragon",
+    "MediaTek (MTK)",
+    "Samsung Exynos",
+    "HiSilicon Kirin",
+    "UNISOC (Spreadtrum)"
+  ],
+  "supported_android_versions": [
+    "Android 8",
+    "Android 9",
+    "Android 10",
+    "Android 11",
+    "Android 12",
+    "Android 13",
+    "Android 14",
+    "Android 15"
+  ],
+  "mtk_supported_keys": [
+    "DA_KEY",
+    "SBC_KEY",
+    "ROOT_KEY",
+    "CRYPTO_SEED",
+    "AUTH_KEY",
+    "KCFG_LOCK",
+    "SLA_CHALLENGE",
+    "SLA_RESPONSE"
+  ],
+  "license_settings": {
+    "key_length": 25,
+    "key_parts": 5,
+    "checksum_mod": 1000,
+    "valid_checksum": 123,
+    "expiry_days": 365
+  },
+  "advanced_settings": {
+    "debug_mode": false,
+    "verbose_logging": false,
+    "performance_monitoring": false,
+    "memory_optimization": true,
+    "multi_threading": true,
+    "max_threads": 4
+  }
+}
+

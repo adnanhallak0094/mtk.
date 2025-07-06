@@ -1,0 +1,231 @@
+{
+  "name": "arabic-phone-tool",
+  "display_name": "أداة تعريب الهواتف الذكية",
+  "version": "1.0.0",
+  "description": "أداة شاملة لتعريب الهواتف الذكية وفك قفل FRP مع أدوات MTK متقدمة",
+  "description_ar": "تطبيق متكامل لتحويل واجهة الهواتف الذكية إلى اللغة العربية مع إمكانيات متقدمة لفك الأقفال وإدارة معالجات MediaTek",
+  "author": {
+    "name": "أبو محمود السوري",
+    "name_en": "Abu Mahmoud Al-Souri",
+    "email": "support@abu-mahmoud-syrian.com",
+    "website": "www.abu-mahmoud-syrian.com",
+    "telegram": "@AbuMahmoudSyrian"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/abu-mahmoud-syrian/arabic-phone-tool",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abu-mahmoud-syrian/arabic-phone-tool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abu-mahmoud-syrian/arabic-phone-tool/issues",
+    "email": "support@abu-mahmoud-syrian.com"
+  },
+  "main": "advanced_main.py",
+  "scripts": {
+    "start": "python advanced_main.py",
+    "build": "python build_exe.py",
+    "test": "python -m pytest tests/",
+    "install": "pip install -r requirements.txt"
+  },
+  "keywords": [
+    "android",
+    "arabic",
+    "localization",
+    "frp",
+    "unlock",
+    "mtk",
+    "mediatek",
+    "phone",
+    "smartphone",
+    "tool",
+    "أندرويد",
+    "تعريب",
+    "فك",
+    "قفل",
+    "هاتف",
+    "أداة"
+  ],
+  "categories": [
+    "Utilities",
+    "System",
+    "Mobile",
+    "Development"
+  ],
+  "platforms": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "requirements": {
+    "python": ">=3.6",
+    "os": ["Windows 7+", "Ubuntu 18.04+", "macOS 10.14+"],
+    "memory": "2GB RAM",
+    "storage": "500MB",
+    "network": "Internet connection for updates"
+  },
+  "features": {
+    "arabization": {
+      "name": "التعريب الشامل",
+      "description": "تحويل واجهة الهاتف إلى اللغة العربية",
+      "supported_versions": ["Android 8", "Android 9", "Android 10", "Android 11", "Android 12", "Android 13", "Android 14", "Android 15"],
+      "components": ["Arabic Fonts", "RTL Support", "Arabic Keyboard"]
+    },
+    "frp_unlock": {
+      "name": "فك قفل FRP",
+      "description": "إزالة قفل Google Account بطريقة آمنة",
+      "supported_processors": ["Qualcomm", "MediaTek", "Exynos", "Kirin", "UNISOC"],
+      "safety_features": ["Backup before unlock", "Compatibility check", "Safe methods only"]
+    },
+    "mtk_tools": {
+      "name": "أدوات MediaTek",
+      "description": "مجموعة شاملة من أدوات معالجات MTK",
+      "capabilities": ["Key extraction", "Log conversion", "Chip detection", "SP Flash Tools integration"],
+      "supported_chips": ["MT6580", "MT6737", "MT6750", "MT6753", "MT6755", "MT6761", "MT6762", "MT6765", "MT6768", "MT6771", "MT6785", "MT6833", "MT6853", "MT6873", "MT6877", "MT6889", "MT6891", "MT6893"]
+    },
+    "license_system": {
+      "name": "نظام الترخيص",
+      "description": "نظام ترخيص متقدم مع مولد مفاتيح مدمج",
+      "types": ["Personal", "Commercial", "Educational"],
+      "security": ["Encryption", "Validation", "Expiry management"]
+    },
+    "device_management": {
+      "name": "إدارة الأجهزة",
+      "description": "فحص وإدارة الأجهزة المتصلة",
+      "capabilities": ["Auto detection", "Device info", "Connection monitoring", "Processor identification"]
+    },
+    "advanced_tools": {
+      "name": "الأدوات المتقدمة",
+      "description": "أدوات إضافية للمستخدمين المتقدمين",
+      "tools": ["Backup & Restore", "File Encryption", "Network Tools", "Update Manager"]
+    }
+  },
+  "supported_devices": {
+    "manufacturers": [
+      "Samsung",
+      "Xiaomi",
+      "Huawei",
+      "Oppo",
+      "Vivo",
+      "Realme",
+      "OnePlus",
+      "Motorola",
+      "Nokia",
+      "LG",
+      "Sony",
+      "HTC",
+      "Lenovo",
+      "Asus",
+      "Alcatel",
+      "TCL",
+      "Infinix",
+      "Tecno",
+      "Itel"
+    ],
+    "processor_families": {
+      "qualcomm": {
+        "name": "Qualcomm Snapdragon",
+        "series": ["200", "400", "600", "700", "800", "8 Gen"],
+        "support_level": "Full"
+      },
+      "mediatek": {
+        "name": "MediaTek",
+        "series": ["Helio A", "Helio G", "Helio P", "Dimensity"],
+        "support_level": "Full"
+      },
+      "exynos": {
+        "name": "Samsung Exynos",
+        "series": ["7", "8", "9", "1000", "2000"],
+        "support_level": "Partial"
+      },
+      "kirin": {
+        "name": "HiSilicon Kirin",
+        "series": ["600", "700", "800", "900", "9000"],
+        "support_level": "Partial"
+      },
+      "unisoc": {
+        "name": "UNISOC",
+        "series": ["Tiger", "SC9863A", "SC9832E"],
+        "support_level": "Basic"
+      }
+    }
+  },
+  "file_structure": {
+    "main_files": [
+      "advanced_main.py",
+      "main.py",
+      "config.py",
+      "utils.py"
+    ],
+    "documentation": [
+      "README.md",
+      "USER_GUIDE.md",
+      "INSTALL.md",
+      "CHANGELOG.md",
+      "LICENSE"
+    ],
+    "configuration": [
+      "requirements.txt",
+      "setup.py",
+      "default_settings.json",
+      "package_info.json"
+    ],
+    "scripts": [
+      "build_exe.py",
+      "run.bat"
+    ],
+    "directories": [
+      "logs/",
+      "keys/",
+      "temp/",
+      "backups/",
+      "downloads/"
+    ]
+  },
+  "build_info": {
+    "build_date": "2024-12-07",
+    "build_tools": ["Python 3.11", "PyInstaller", "setuptools"],
+    "target_platforms": ["Windows x64", "Linux x64"],
+    "executable_size": "~50MB",
+    "installer_size": "~25MB"
+  },
+  "update_info": {
+    "update_server": "https://api.abu-mahmoud-syrian.com/updates",
+    "check_interval": "weekly",
+    "auto_update": false,
+    "update_channels": ["stable", "beta", "alpha"]
+  },
+  "telemetry": {
+    "enabled": false,
+    "anonymous": true,
+    "opt_out": true,
+    "data_collected": ["usage_statistics", "error_reports", "performance_metrics"]
+  },
+  "security": {
+    "code_signing": true,
+    "virus_scanning": true,
+    "secure_communication": true,
+    "data_encryption": true,
+    "privacy_compliant": true
+  },
+  "support": {
+    "documentation": "https://github.com/abu-mahmoud-syrian/arabic-phone-tool/wiki",
+    "community": "https://github.com/abu-mahmoud-syrian/arabic-phone-tool/discussions",
+    "issues": "https://github.com/abu-mahmoud-syrian/arabic-phone-tool/issues",
+    "email": "support@abu-mahmoud-syrian.com",
+    "telegram": "@AbuMahmoudSyrian",
+    "response_time": "24-48 hours"
+  },
+  "legal": {
+    "copyright": "© 2024 أبو محمود السوري",
+    "license_type": "MIT",
+    "warranty": "No warranty provided",
+    "liability": "Use at your own risk",
+    "compliance": ["GDPR", "CCPA", "Local laws"]
+  }
+}
+
